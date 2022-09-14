@@ -1,5 +1,5 @@
 * {
-  outline: 1px solid #369;
+  /* outline: 1px solid #369; */
 }
 
 .container {
@@ -33,22 +33,137 @@
 }
 
 
+
 .MainVisual {
+  position: relative;
   width: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
-.MainVisual Slider {
+.mainTitle {
+  position: absolute;
+  top: 150px;
+  left: calc(((100% - 1200px) / 2) / 2);
+  z-index: 999;
+}
+
+.mainTitle h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+
+.mainTitle p {
+  font-size: 26px;
+  line-height: 1.25;
+}
+
+.mainSlider {
   width: calc((100% - 1200px) / 2 + 1200px);
+  margin: 0 0 0 auto;
 }
 
-.MainVisual .main01 {
-  width: calc((100% - 1200px) / 2 + 1200px);
-  background: url(/public/img/main01.jpg);
-  height: 800px;
+
+
+
+.MainAbout .inner {
+  display: flex;
 }
 
-.MainVisual .main02 {
-  background: url(/public/img/main02.jpg);
-  height: 800px;
+.inner .aboutImg {
+  flex: 1;
+}
+
+.inner .aboutTxt {
+  flex: 1;
+  vertical-align: middle;
+  margin: auto 0;
+}
+
+.aboutTxt h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin: 0 0 30px 100px;
+}
+
+.aboutTxt p {
+  display: block;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 0 0 60px 100px;
+  line-height: 1.25;
+}
+
+.aboutTxt a {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 10px 20px;
+  margin: 0 0 0 100px;
+  border: 1px solid #333;
+}
+
+
+
+.MainIdentity {
+  padding: 150px 0;
+}
+
+.MainIdentity .container {
+  display: flex;
+  gap: 50px;
+}
+
+.MainIdentity figure {
+  position: relative;
+  flex: 1;
+}
+
+/* .MainIdentity figure~figure {
+  border-left: 1px solid #f1f1f1;
+} */
+
+.MainIdentity figure~figure::before {
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  transform: translateY(-50%);
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 100px;
+  background: #f1f1f1;
+}
+
+.MainIdentity figure .num {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  font-size: 55px;
+  font-weight: 900;
+  color: #f1f1f1;
+  z-index: -1;
+}
+
+.MainIdentity figure .tit {
+  font-size: 45px;
+  font-weight: 800;
+  text-align: center;
+  line-height: 90px;
+}
+
+.MainIdentity figure .con {
+  text-align: center;
+  line-height: 1.45;
+}
+
+
+
+
+.MainPortfolio {
+  padding: 150px;
+  background: #333;
+
 }
