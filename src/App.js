@@ -4,6 +4,8 @@ import MainVisual from './component/MainVisual';
 import MainAbout from './component/MainAbout';
 import MainIdentity from './component/MainIdentity';
 import MainPortfolio from './component/MainPortfolio';
+import MainPress from './component/MainPress';
+import MainMap from './component/MainMap';
 
 const App = () => {
   return (
@@ -14,6 +16,8 @@ const App = () => {
         <MainAbout />
         <MainIdentity />
         <MainPortfolio />
+        <MainPress />
+        <MainMap />
       </main>
     </div>
   );
