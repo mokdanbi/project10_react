@@ -1,8 +1,8 @@
 const NAVLINK = [
-    { id: 1, menu: "COMPANY", link: "/" },
-    { id: 2, menu: "WORK", link: "/" },
-    { id: 3, menu: "ESTIMATE", link: "/" },
-    { id: 4, menu: "PR", link: "/" },
+    { id: 1, menu: "COMPANY", link: "/1" },
+    { id: 2, menu: "WORK", link: "/2" },
+    { id: 3, menu: "ESTIMATE", link: "/3" },
+    { id: 4, menu: "PR", link: "/4" },
 ]
 
 const Header = () => {
@@ -10,7 +10,7 @@ const Header = () => {
         <header className="Header">
             <div className="container">
                 <h1>
-                    <a href="/">
+                    <a href="#">
                         MIDAS
                     </a>
                 </h1>
