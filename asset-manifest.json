@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/project10_react/static/css/main.d63ced60.css",
-    "main.js": "/project10_react/static/js/main.bec407b8.js",
-    "static/media/slick.svg": "/project10_react/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/project10_react/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/project10_react/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/project10_react/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/project10_react/index.html",
-    "main.d63ced60.css.map": "/project10_react/static/css/main.d63ced60.css.map",
-    "main.bec407b8.js.map": "/project10_react/static/js/main.bec407b8.js.map"
+    "main.css": "/static/css/main.bd7825b7.css",
+    "main.js": "/static/js/main.7458673a.js",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.bd7825b7.css.map": "/static/css/main.bd7825b7.css.map",
+    "main.7458673a.js.map": "/static/js/main.7458673a.js.map"
   },
   "entrypoints": [
-    "static/css/main.d63ced60.css",
-    "static/js/main.bec407b8.js"
+    "static/css/main.bd7825b7.css",
+    "static/js/main.7458673a.js"
   ]
 }
