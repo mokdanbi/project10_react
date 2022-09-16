@@ -25,6 +25,10 @@
   font-weight: 900;
 }
 
+.Header h1 a {
+  display: block;
+}
+
 .Gnb ul {
   display: flex;
   gap: 40px;
@@ -34,6 +38,10 @@
 
 .Gnb ul>li:hover {
   color: #ddd;
+}
+
+.Gnb ul>li>a {
+  display: block;
 }
 
 
