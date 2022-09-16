@@ -382,6 +382,15 @@
   justify-content: space-between;
 }
 
+
+/* mapimg대체 */
+.MainMap .mapImg {
+  width: 775px;
+  height: 400px;
+  background: url(../public/img/map.jpg) no-repeat center center/cover;
+}
+/* mapimg대체끝 */
+
 .MainMap .mapTxt {
   margin: auto 0;
 }
