@@ -32,6 +32,9 @@
   font-weight: 600;
 }
 
+.Gnb ul>li:hover {
+  color: #ddd;
+}
 
 
 .MainVisual {
@@ -89,19 +92,22 @@
 
 .aboutTxt p {
   display: block;
-  font-size: 18px;
-  font-weight: 300;
+  font-size: 16px;
   margin: 0 0 60px 100px;
-  line-height: 1.25;
+  line-height: 1.3;
 }
 
 .aboutTxt a {
   display: inline-block;
   font-size: 14px;
-  font-weight: 300;
   padding: 10px 20px;
   margin: 0 0 0 100px;
   border: 1px solid #333;
+}
+
+.aboutTxt a:hover {
+  background: #333;
+  color: #fff;
 }
 
 
@@ -112,7 +118,7 @@
 
 .MainIdentity .container {
   display: flex;
-  gap: 50px;
+  gap: 60px;
 }
 
 .MainIdentity figure {
@@ -127,12 +133,12 @@
 .MainIdentity figure~figure::before {
   position: absolute;
   top: 50%;
-  left: -25px;
+  left: -30px;
   transform: translateY(-50%);
   content: "";
   display: inline-block;
   width: 1px;
-  height: 100px;
+  height: 150px;
   background: #f1f1f1;
 }
 
@@ -285,7 +291,7 @@
 
 
 .MainPress {
-  padding: 150px 0;
+  padding: 150px 0 210px;
   overflow-x: hidden;
 }
 
@@ -332,6 +338,7 @@
   top: 30px;
   left: calc((100% - 1200px) / 2);
   font-size: 30px;
+  cursor: pointer;
 }
 
 .MainPress .arrows i:last-child {
@@ -395,6 +402,66 @@
 
 .MainMap .mapTxt p {
   text-align: right;
-  line-height: 1.45;
+  line-height: 1.6;
   font-weight: 500;
+}
+
+
+.Footer {
+  background: #333;
+  color: #fff;
+}
+
+.Footer .ft_top {
+  line-height: 60px;
+  border-bottom: 1px solid #444;
+}
+
+.Footer .ft_top .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Footer .ft_top .left {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+  letter-spacing: 0em;
+}
+
+.Footer .ft_top .left>dd>a::after {
+  content: "";
+  width: 1px;
+  height: 13px;
+  vertical-align: middle;
+  display: inline-block;
+  background: #888;
+  margin: 0 0 0 20px;
+}
+
+.Footer .ft_top .left>dt {
+  font-weight: 600;
+}
+
+.Footer .ft_top .right {
+  display: flex;
+  gap: 20px;
+}
+
+.Footer .ft_top .right>li {
+  font-size: 22px;
+  transform: translateY(3px);
+}
+
+.Footer .ft_bottom {
+  padding: 30px 0;
+  font-size: 13px;
+}
+
+.Footer .ft_bottom p {
+  margin: 0 0 10px 0;
+}
+
+.Footer .ft_bottom strong {
+  font-weight: 600;
 }

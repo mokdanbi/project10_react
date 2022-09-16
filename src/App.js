@@ -6,6 +6,7 @@ import MainIdentity from './component/MainIdentity';
 import MainPortfolio from './component/MainPortfolio';
 import MainPress from './component/MainPress';
 import MainMap from './component/MainMap';
+import Footer from './component/Footer';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <MainPress />
         <MainMap />
       </main>
+      <Footer />
     </div>
   );
 }

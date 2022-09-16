@@ -4,11 +4,8 @@ const MainMap = () => {
     return (
         <section className="MainMap">
             <div className="container">
-                <Map center={{ lat: 33.5563, lng: 126.79581 }}
-                    style={{ width: "600px", height: "350px" }}>
-                    <MapMarker position={{ lat: 33.55635, lng: 126.795841 }}>
-                        <div style={{ color: "#000" }}>Hello World!</div>
-                    </MapMarker>
+                <Map center={{ lat: 37.4987, lng: 127.0365 }} style={{ width: "775px", height: "400px" }}>
+                    <MapMarker position={{ lat: 37.4987, lng: 127.0365 }} ></MapMarker>
                 </Map>
                 <div className="mapTxt">
                     <h2>MIDAS<br />OFFICE</h2>
@@ -17,7 +14,7 @@ const MainMap = () => {
                         Seoul, Korea</p>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
 
