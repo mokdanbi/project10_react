@@ -299,7 +299,7 @@
 
 
 .MainPress {
-  padding: 150px 0 210px;
+  padding: 75px 0 210px;
   overflow-x: hidden;
 }
 
@@ -384,11 +384,11 @@
 
 
 /* mapimg대체 */
-.MainMap .mapImg {
+/* .MainMap .mapImg {
   width: 775px;
   height: 400px;
   background: url(../public/img/map.jpg) no-repeat center center/cover;
-}
+} */
 /* mapimg대체끝 */
 
 .MainMap .mapTxt {
