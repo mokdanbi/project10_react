@@ -10,7 +10,7 @@ const Header = () => {
         <header className="Header">
             <div className="container">
                 <h1>
-                    <a href="#">
+                    <a href="">
                         MIDAS
                     </a>
                 </h1>

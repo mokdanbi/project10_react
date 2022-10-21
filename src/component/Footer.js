@@ -1,4 +1,3 @@
-import { useRef } from "react";
 import { GrFacebook } from "react-icons/gr";
 import { GrInstagram } from "react-icons/gr";
 
