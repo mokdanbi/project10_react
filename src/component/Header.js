@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const NAVLINK = [
   { id: 1, menu: "COMPANY", link: "/1" },
   { id: 2, menu: "WORK", link: "/2" },
@@ -12,9 +10,9 @@ const Header = () => {
     <header className="Header">
       <div className="container">
         <h1>
-          <Link to="./component/Header">
+          <a href="/">
             MIDAS
-          </Link>
+          </a>
         </h1>
         <nav className="Gnb">
           <ul>
