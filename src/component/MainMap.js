@@ -4,9 +4,11 @@ const MainMap = () => {
   return (
     <section className="MainMap">
       <div className="container">
-        <Map center={{ lat: 37.4987, lng: 127.0365 }} style={{ width: "775px", height: "400px" }}>
-          <MapMarker position={{ lat: 37.4987, lng: 127.0365 }} ></MapMarker>
-        </Map>
+        <div className="office">
+          <Map center={{ lat: 37.4987, lng: 127.0365 }} style={{ width: "775px", height: "400px" }}>
+            <MapMarker position={{ lat: 37.4987, lng: 127.0365 }} ></MapMarker>
+          </Map>
+        </div>
         {/* <div className="mapImg"></div> */}
         <div className="mapTxt">
           <h2>MIDAS<br />OFFICE</h2>
