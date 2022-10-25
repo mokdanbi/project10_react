@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+
 const NAVLINK = [
-  { id: 1, menu: "COMPANY", link: "/1" },
-  { id: 2, menu: "WORK", link: "/2" },
-  { id: 3, menu: "ESTIMATE", link: "/3" },
-  { id: 4, menu: "PR", link: "/4" },
+  { id: 1, menu: "COMPANY", link: "/company" },
+  { id: 2, menu: "WORK", link: "/work" },
+  { id: 3, menu: "ESTIMATE", link: "/estimate" },
+  { id: 4, menu: "PR", link: "/pr" },
 ]
 
 const Header = () => {
@@ -10,9 +12,9 @@ const Header = () => {
     <header className="Header">
       <div className="container">
         <h1>
-          <a href="/">
+          <Link to="/">
             MIDAS
-          </a>
+          </Link>
         </h1>
         <nav className="Gnb">
           <ul>
@@ -20,7 +22,7 @@ const Header = () => {
               NAVLINK.map((it, idx) => {
                 return (
                   <li key={it.id}>
-                    <a href={it.link}>{it.menu}</a>
+                    <Link to={it.link}>{it.menu}</Link>
                   </li>
                 )
               })
