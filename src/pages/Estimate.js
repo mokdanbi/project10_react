@@ -8,51 +8,51 @@ const Estimate = () => {
         <h2>ESTIMATE</h2>
       </div>
       <div className="formwrap">
-        <div className="formset">
-          <div className="tbtitle">
-            <h3>신청자 정보</h3>
-          </div>
-          <form action="">
+        <form action="" autoComplete='off'>
+          <div className="formset">
+            <div className="tbtitle">
+              <h3>신청자 정보</h3>
+            </div>
             <table>
               <tr>
                 <td>
-                  <label htmlFor="">성함</label>
-                  <input type="text" />
+                  <label htmlFor="name">성함</label>
+                  <input type="text" id='name' required />
                 </td>
                 <td>
-                  <label htmlFor="">연락처</label>
-                  <input type="tel" />
+                  <label htmlFor="tel">연락처</label>
+                  <input type="tel" id='tel' placeholder='-를 제외하고 입력해주세요' required />
                 </td>
               </tr>
               <tr>
                 <td>
-                  <label htmlFor="">이메일</label>
-                  <input type="email" />
+                  <label htmlFor="email">이메일</label>
+                  <input type="email" id='email' />
                 </td>
                 <td>
-                  <label htmlFor="">비밀번호</label>
-                  <input type="password" />
+                  <label htmlFor="pw">비밀번호</label>
+                  <input type="password" id='pw' required/>
                 </td>
               </tr>
               <tr>
                 <td colspan="2">
-                  <label htmlFor="">주소</label>
-                  <input type="text" />
+                  <label htmlFor="add">주소</label>
+                  <input type="text" id='add' />
                 </td>
               </tr>
             </table>
-          </form>
-        </div>
-        <div className="formset">
-          <div className="tbtitle">
-            <h3>프로젝트 정보</h3>
+
           </div>
-          <form action="">
+          <div className="formset">
+            <div className="tbtitle">
+              <h3>프로젝트 정보</h3>
+            </div>
+
             <table>
               <tr>
                 <td>
-                  <label htmlFor="">프로젝트 제목</label>
-                  <input type="text" />
+                  <label htmlFor="title">프로젝트 제목</label>
+                  <input type="text" id='title' required />
                 </td>
               </tr>
               <tr>
@@ -113,12 +113,16 @@ const Estimate = () => {
                 </td>
               </tr>
             </table>
+          </div>
+          <div className="btn">
             <input type="submit" className='sm bt' value="프로젝트 의뢰하기" />
-            <input type="reset" className='rs bt' value="초기화 하기"></input>
-          </form>
-        </div>
+            <input type="reset" className='rs bt' value="초기화 하기" />
+          </div>
+        </form>
       </div>
-    </div>
+
+
+    </div >
   )
 }
 

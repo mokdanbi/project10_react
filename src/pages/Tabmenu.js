@@ -1,48 +1,237 @@
-import React, { useState } from "react";
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
 
-const content = [
-  {
-    tab: "주거공간",
-    content:
-      "컴퓨팅에서 리액트는 자바스크립트 라이브러리의 하나로서 사용자 인터페이스를 만들기 위해 사용된다. 페이스북과 개별 개발자 및 기업들 공동체에 의해 유지보수된다. 리액트는 싱글 페이지나 모바일 애플리케이션의 개발 시 토대로 사용될 수 있다."
-  },
-  {
-    tab: "뷰티공간",
-    content:
-      "Node.js는 확장성 있는 네트워크 애플리케이션 개발에 사용되는 소프트웨어 플랫폼이다. 작성 언어로 자바스크립트를 활용하며 Non-blocking I/O와 단일 스레드 이벤트 루프를 통한 높은 처리 성능을 가지고 있다"
-  },
-  {
-    tab: "상업공간",
-    content:
-      "자바스크립트는 객체 기반의 스크립트 프로그래밍 언어이다. 이 언어는 웹 브라우저 내에서 주로 사용하며, 다른 응용 프로그램의 내장 객체에도 접근할 수 있는 기능을 가지고 있다. 또한 Node.js와 같은 런타임 환경과 같이 서버 사이드 네트워크 프로그래밍에도 사용되고 있다."
-  },
-  {
-    tab: "업무공간",
-    content:
-      "자바스크립트는 객체 기반의 스크립트 프로그래밍 언어이다. 이 언어는 웹 브라우저 내에서 주로 사용하며, 다른 응용 프로그램의 내장 객체에도 접근할 수 있는 기능을 가지고 있다. 또한 Node.js와 같은 런타임 환경과 같이 서버 사이드 네트워크 프로그래밍에도 사용되고 있다."
-  }
-];
+const RESIDENTIAL = [
+  { id: 1, title: "기흥 전원주택" },
+  { id: 2, title: "주거공간 인테리어" },
+  { id: 3, title: "단독주택 인테리어" },
+]
 
-const useTabs = (initialTabs, allTabs) => {
-  const [contentIndex, setContentIndex] = useState(initialTabs);
-  return {
-    contentItem: allTabs[contentIndex],
-    contentChange: setContentIndex
-  };
-};
+const BEAUTY = [
+  { id: 1, title: "청담동 미용실" },
+  { id: 2, title: "청담 PRIVE'ESPACE" },
+  { id: 3, title: "LLOYDBOM" },
+]
 
-const Tabmenu = () => {
-  const { contentItem, contentChange } = useTabs(0, content);
-  return (
-    <div className="App">
-      {content.map((section, index) => (
-        <button onClick={() => contentChange(index)}>{section.tab}</button>
-      ))}
-      <br />
-      <br />
-      {contentItem.content}
-    </div>
-  );
-}
+const COMMERCIAL = [
+  { id: 1, title: "hudex" },
+  { id: 2, title: "취미실" },
+  { id: 3, title: "고운세상피부과" },
+]
 
-export default Tabmenu;
+const BUSINESS = [
+  { id: 1, title: "Building" },
+  { id: 2, title: "HUUI.M COMPANY" },
+  { id: 3, title: "집무실" },
+]
+
+export default () => (
+  <Tabs>
+    <TabList>
+      <Tab>주거공간</Tab>
+      <Tab>뷰티공간</Tab>
+      <Tab>상업공간</Tab>
+      <Tab>업무공간</Tab>
+    </TabList>
+    <TabPanel>
+      <div className='fgwrap'>
+        {
+          RESIDENTIAL.map(res => {
+            return (
+              <figure>
+                <div className='box'>
+                  <img src={process.env.PUBLIC_URL + "/img/work01_0" + res.id + ".jpg"} alt="" />
+                </div>
+                <div className="tit">
+                  {res.title}
+                </div>
+              </figure>
+            )
+          })
+        }
+      </div>
+      <div className='fgwrap'>
+        {
+          RESIDENTIAL.map(res => {
+            return (
+              <figure>
+                <div className='box'>
+                  <img src={process.env.PUBLIC_URL + "/img/work01_0" + res.id + ".jpg"} alt="" />
+                </div>
+                <div className="tit">
+                  {res.title}
+                </div>
+              </figure>
+            )
+          })
+        }
+      </div>
+      <div className='fgwrap'>
+        {
+          RESIDENTIAL.map(res => {
+            return (
+              <figure>
+                <div className='box'>
+                  <img src={process.env.PUBLIC_URL + "/img/work01_0" + res.id + ".jpg"} alt="" />
+                </div>
+                <div className="tit">
+                  {res.title}
+                </div>
+              </figure>
+            )
+          })
+        }
+      </div>
+    </TabPanel>
+    <TabPanel>
+      <div className='fgwrap'>
+        {
+          BEAUTY.map(bea => {
+            return (
+              <figure>
+                <div className='box'>
+                  <img src={process.env.PUBLIC_URL + "/img/work02_0" + bea.id + ".jpg"} alt="" />
+                </div>
+                <div className="tit">
+                  {bea.title}
+                </div>
+              </figure>
+            )
+          })
+        }
+      </div>
+      <div className='fgwrap'>
+        {
+          BEAUTY.map(bea => {
+            return (
+              <figure>
+                <div className='box'>
+                  <img src={process.env.PUBLIC_URL + "/img/work02_0" + bea.id + ".jpg"} alt="" />
+                </div>
+                <div className="tit">
+                  {bea.title}
+                </div>
+              </figure>
+            )
+          })
+        }
+      </div>
+      <div className='fgwrap'>
+        {
+          BEAUTY.map(bea => {
+            return (
+              <figure>
+                <div className='box'>
+                  <img src={process.env.PUBLIC_URL + "/img/work02_0" + bea.id + ".jpg"} alt="" />
+                </div>
+                <div className="tit">
+                  {bea.title}
+                </div>
+              </figure>
+            )
+          })
+        }
+      </div>
+    </TabPanel>
+    <TabPanel>
+      <div className='fgwrap'>
+        {
+          COMMERCIAL.map(com => {
+            return (
+              <figure>
+                <div className='box'>
+                  <img src={process.env.PUBLIC_URL + "/img/work03_0" + com.id + ".jpg"} alt="" />
+                </div>
+                <div className="tit">
+                  {com.title}
+                </div>
+              </figure>
+            )
+          })
+        }
+      </div>
+      <div className='fgwrap'>
+        {
+          COMMERCIAL.map(com => {
+            return (
+              <figure>
+                <div className='box'>
+                  <img src={process.env.PUBLIC_URL + "/img/work03_0" + com.id + ".jpg"} alt="" />
+                </div>
+                <div className="tit">
+                  {com.title}
+                </div>
+              </figure>
+            )
+          })
+        }
+      </div>
+      <div className='fgwrap'>
+        {
+          COMMERCIAL.map(com => {
+            return (
+              <figure>
+                <div className='box'>
+                  <img src={process.env.PUBLIC_URL + "/img/work03_0" + com.id + ".jpg"} alt="" />
+                </div>
+                <div className="tit">
+                  {com.title}
+                </div>
+              </figure>
+            )
+          })
+        }
+      </div>
+    </TabPanel>
+    <TabPanel>
+      <div className='fgwrap'>
+        {
+          BUSINESS.map(bus => {
+            return (
+              <figure>
+                <div className='box'>
+                  <img src={process.env.PUBLIC_URL + "/img/work04_0" + bus.id + ".jpg"} alt="" />
+                </div>
+                <div className="tit">
+                  {bus.title}
+                </div>
+              </figure>
+            )
+          })
+        }
+      </div>
+      <div className='fgwrap'>
+        {
+          BUSINESS.map(bus => {
+            return (
+              <figure>
+                <div className='box'>
+                  <img src={process.env.PUBLIC_URL + "/img/work04_0" + bus.id + ".jpg"} alt="" />
+                </div>
+                <div className="tit">
+                  {bus.title}
+                </div>
+              </figure>
+            )
+          })
+        }
+      </div>
+      <div className='fgwrap'>
+        {
+          BUSINESS.map(bus => {
+            return (
+              <figure>
+                <div className='box'>
+                  <img src={process.env.PUBLIC_URL + "/img/work04_0" + bus.id + ".jpg"} alt="" />
+                </div>
+                <div className="tit">
+                  {bus.title}
+                </div>
+              </figure>
+            )
+          })
+        }
+      </div>
+    </TabPanel>
+  </Tabs>
+);

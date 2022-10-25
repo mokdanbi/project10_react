@@ -1,8 +1,10 @@
+import { Link } from "react-router-dom";
+
 const PORTFOLIO = [
-    { id: 1, title: "Residential", link: "/1" },
-    { id: 2, title: "Beauty", link: "/2" },
-    { id: 3, title: "Commercial", link: "/3" },
-    { id: 4, title: "Business", link: "/4" },
+    { id: 1, title: "Residential", link: "/work" },
+    { id: 2, title: "Beauty", link: "/work" },
+    { id: 3, title: "Commercial", link: "/work" },
+    { id: 4, title: "Business", link: "/work" },
 ]
 
 const MainPortfolio = () => {
@@ -15,7 +17,7 @@ const MainPortfolio = () => {
                     PORTFOLIO.map(portfolio => {
                         return (
                             <figure key={portfolio.id}>
-                                <a href={portfolio.link}>
+                                <Link to={portfolio.link}>
                                     <div className="box">
                                         <div className="b_box"></div>
                                         <img src={process.env.PUBLIC_URL + "/img/pf0" + portfolio.id + ".jpg"} alt="" />
@@ -23,7 +25,7 @@ const MainPortfolio = () => {
                                     <div className="tit">
                                         {portfolio.title}
                                     </div>
-                                </a>
+                                </Link>
                             </figure>
                         )
                     })
