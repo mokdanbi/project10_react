@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/project10_react/static/css/main.8b8c7ee0.css",
-    "main.js": "/project10_react/static/js/main.11bfb59f.js",
+    "main.css": "/project10_react/static/css/main.4f8cdcd1.css",
+    "main.js": "/project10_react/static/js/main.f9afcde1.js",
+    "static/media/estimate.jpg": "/project10_react/static/media/estimate.e3eedb82f8fb5b163d42.jpg",
+    "static/media/company.jpg": "/project10_react/static/media/company.5e7e9845a6c450a31a20.jpg",
+    "static/media/work.jpg": "/project10_react/static/media/work.33ac1ee146d787b20208.jpg",
+    "static/media/pr.jpg": "/project10_react/static/media/pr.80e77c89a78533e962dd.jpg",
     "static/media/slick.svg": "/project10_react/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/project10_react/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/project10_react/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/project10_react/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/project10_react/index.html",
-    "main.8b8c7ee0.css.map": "/project10_react/static/css/main.8b8c7ee0.css.map",
-    "main.11bfb59f.js.map": "/project10_react/static/js/main.11bfb59f.js.map"
+    "main.4f8cdcd1.css.map": "/project10_react/static/css/main.4f8cdcd1.css.map",
+    "main.f9afcde1.js.map": "/project10_react/static/js/main.f9afcde1.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b8c7ee0.css",
-    "static/js/main.11bfb59f.js"
+    "static/css/main.4f8cdcd1.css",
+    "static/js/main.f9afcde1.js"
   ]
 }
