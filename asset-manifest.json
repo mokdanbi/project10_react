@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/project10_react/static/css/main.4f8cdcd1.css",
-    "main.js": "/project10_react/static/js/main.f9afcde1.js",
+    "main.css": "/project10_react/static/css/main.44ba9f30.css",
+    "main.js": "/project10_react/static/js/main.01d481f9.js",
     "static/media/estimate.jpg": "/project10_react/static/media/estimate.e3eedb82f8fb5b163d42.jpg",
     "static/media/company.jpg": "/project10_react/static/media/company.5e7e9845a6c450a31a20.jpg",
     "static/media/work.jpg": "/project10_react/static/media/work.33ac1ee146d787b20208.jpg",
@@ -11,11 +11,11 @@
     "static/media/slick.ttf": "/project10_react/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/project10_react/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/project10_react/index.html",
-    "main.4f8cdcd1.css.map": "/project10_react/static/css/main.4f8cdcd1.css.map",
-    "main.f9afcde1.js.map": "/project10_react/static/js/main.f9afcde1.js.map"
+    "main.44ba9f30.css.map": "/project10_react/static/css/main.44ba9f30.css.map",
+    "main.01d481f9.js.map": "/project10_react/static/js/main.01d481f9.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f8cdcd1.css",
-    "static/js/main.f9afcde1.js"
+    "static/css/main.44ba9f30.css",
+    "static/js/main.01d481f9.js"
   ]
 }
